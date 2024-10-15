@@ -1,0 +1,71 @@
+<html>
+ <head>
+  <title>Login page</title>
+ </head>
+ <body>
+ <div>
+ <script>
+ function data()
+ {
+	 //console.log("Hello");
+	 //console.log(document.getElementById("ABC"));
+	 //console.log(document.getElementById("t1").value);
+	 //console.log(document.getElementById("ABC").value);
+	 //console.log(document.getElementsByName("xyz"));
+	 //console.log(document.getElementsByName("xyz").value);
+	 //console.log(document.getElementById("f1"));
+	 //console.log(document.getElementById("f1").value);
+	 //console.log(document.getElementsByName("Sibi"));
+	 //console.log(document.getElementsByName("Sibi").value);
+	 /*var s1=document.getElementsByName("sibi");
+	 console.log(s1);
+	 for (i=0;i<s1.length;i++)
+	 {
+		 console.log(i);
+		 if (s1[i].checked)
+		 {
+			 console.log(s1[i].value);
+		 }
+	 }*/
+	 /*var s=document.getElementsByName("xxx");
+	 console.log(s);
+	 for (i=0;i<s.length;i++)
+	 {
+		 console.log(i);
+		 if (s[i].checked)
+		 {
+			 console.log(s[i].value);
+		 }
+	 }*/
+	 var s2=document.getElementById("jai");
+	 console.log(s2);
+	 console.log(document.getElementsByName("Course"));
+	 var s3=s2.options[s2.selectedIndex].value;
+	 console.log(s3);
+	 //console.log(document.getElementById("jai").value);
+	 //console.log(document.getElementsByName("Gender"));
+ }
+ </script>
+ <label>Username </label> &nbsp&nbsp&nbsp&nbsp
+ <input type="text" id="t1" name="xyz" maxlength="30"><br><br>
+ <label>Feedback</label>
+ <textarea col='1200' row='80' id="f1" name="Sibii"></textarea><br><br>
+ <label>Gender</label>
+ <input type="radio"name="sibi"value="Male" >Male
+ <input type="radio"name="sibi"value="Female">Female
+ <input type="radio"name="sibi"value="Others">Others<br><br> 
+ <label>Hobbies</label>
+ <input type="checkbox" name="xxx" value="song">song
+ <input type="checkbox" name="xxx" value="writing">writing
+ <input type="checkbox" name="xxx" value="photography">photography
+ <input type="checkbox" name="xxx" value="reading">reading<br><br> 
+ <label>Course</label>
+  <select name="Course" id="jai">
+  <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+  <option value="Electronic and Electrical Engineering">Electronic and Electrical Engineering</option>
+  <option value="Electrical and Communication Engineering">Electrical and Communication Engineering</option>
+  <option value="Mechanical Engineering">Mechanical Engineering</option>
+  </select><br><br>
+ <input type="submit" id="ABC"  onclick="data()">
+ </body>
+ </html>
